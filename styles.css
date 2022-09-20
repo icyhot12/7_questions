@@ -20,6 +20,13 @@ i {
   color: #c59d5f;
 }
 
+.btn {
+    background-color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
