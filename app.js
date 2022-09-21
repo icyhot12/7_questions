@@ -9,12 +9,18 @@
 
 
 // secod method
+
 const questions = document.querySelectorAll('.question-container');
 
-questions.forEach(question => {
+questions.forEach((question) => {
     const btn = question.querySelector('.btn');
-
+   
     btn.addEventListener('click', () => {
+        questions.forEach((item) => {
+            if (question != item) {
+                item.classList.remove('show-text')
+            }
+        })
         question.classList.toggle('show-text');
     })
 })
